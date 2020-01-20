@@ -10,4 +10,3 @@ user_name = input("Введите Ваше имя: ")
 user_age = int(input("Введите Ваш возраст: "))
 print("Привет,", user_name)
 
-
