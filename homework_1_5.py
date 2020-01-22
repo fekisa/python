@@ -6,14 +6,16 @@
 
 proceeds = int(input("Введиту сумму выручки: "))
 costs = int(input("Введиту сумму издержек: "))
-result = proceeds - costs
-efficiency = result/proceeds
+result = proceeds-costs
 
-if result >= 0:
-    print(f"Ваша прибыль составила:{result}")
-    print(f"Рентабельность:{efficiency}")
+if proceeds > costs:
+    efficiency = result/proceeds
+    print(f'''Ваша прибыль составила:{result}.
+Рентабельность: {efficiency}''')
     employee = int(input("Введите количество сотрудников: "))
     income_per_person = result / employee
     print(f"Прибыль в расчете на одного сотрудника составляет:{income_per_person}")
+elif proceeds == costs:
+    print("Вы отработали в 0")
 else:
     print(f"Ваш убыток составил: {result}")
