@@ -4,7 +4,7 @@
 
 input_second = int(input('Введите количество секунд: '))
 
-hour = ((input_second // 3600)) % 24
+hour = (input_second // 3600) % 24
 minute = (input_second // 60) % 60
 second = input_second % 60
 
