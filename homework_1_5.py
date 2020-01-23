@@ -19,3 +19,5 @@ elif proceeds == costs:
     print("Вы отработали в 0")
 else:
     print(f"Ваш убыток составил: {result}")
+
+# проверка данных if proceeds.isdigit:  , но более правильно использовать try : except
