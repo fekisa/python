@@ -4,7 +4,5 @@
 
 user_string = input("Введите любое предложение: ")
 user_list = user_string.split(' ')
-for i, element in enumerate(user_list, 1):
-    if len(element) > 10:
-        element = element[0:10]
-    print(f"{i}. - {element}")
+for i, element in enumerate(user_list, 1): #if element > 10 - проверка не обязательна, если задана максимальная граница, ограничение вынесено в результат
+    print(f"{i}. - {element[:10]}")

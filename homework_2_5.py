@@ -10,8 +10,9 @@
 #number = int(input("Введите число: "))
 my_list = [7, 5, 3, 3, 2]
 print(f"Рейтинг - {my_list}")
-number = int(input("Введите число: "))
+
 while True:
+    number = int(input("Введите число: "))
     for i in range(len(my_list)):
         if my_list[i] == number:
             my_list.insert(i + 1, number)
@@ -22,7 +23,7 @@ while True:
             my_list.append(number)
         elif my_list[i] > number and my_list[i+1] < number:
             my_list.insert(i+1, number)
+            break
     print(f"Обновленный рейтинг - {my_list}")
-    number = int(input("Введите число "))
 
 #почему на 0 цикл вылетает? Починила while true
