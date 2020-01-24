@@ -151,5 +151,4 @@ crashlytics-build.properties
 fabric.properties
 
 #DS_Store
-*.DS_Store
-._*
+**/.DS_Store
