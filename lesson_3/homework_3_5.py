@@ -7,3 +7,27 @@
 Если специальный символ введен после нескольких чисел, то вначале нужно добавить сумму этих чисел
 к полученной ранее сумме и после этого завершить программу.
 """
+
+# Решение наставника (разобрать на досуге)
+
+def insert_sum(*args): #ввод сколь угодного числа аргументов
+    result = 0
+    exit_flag = False
+    for itm in args:
+        try:
+            result += float(itm) if itm else 0
+        except ValueError as e:
+            if itm == 'q':
+                exit_flag = not exit_flag
+    return result, exit_flag
+
+user_sum = 0
+while True:
+    user_input = input('Введите числа через пробел: \n').split(' ')
+    result_sum, user_exit = insert_sum(*user_input)
+    user_sum += result_sum
+    print(f'сумма: {user_sum}')
+
+    if user_exit:
+        print("Пока-пока")
+        break
