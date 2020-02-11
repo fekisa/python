@@ -19,7 +19,7 @@ class TrafficLight:
         i = 0
         while i < 3:
             print(f'Светофор переключается \n '
-                  f'{TrafficLight.__color[i]}')
+                  f'{self.__color[i]}')
             if i == 0:
                 sleep(7)
             elif i == 1:
